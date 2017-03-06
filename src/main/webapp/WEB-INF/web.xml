@@ -5,7 +5,7 @@
 	version="3.0">
 	<display-name>Conversation Enhanced Demo</display-name>
 	<welcome-file-list>
-		<welcome-file>redirect.html</welcome-file>
+		<welcome-file>iframe.html</welcome-file>
 	</welcome-file-list>
 	<listener>
 		<listener-class>com.ibm.watson.apis.conversation_enhanced.listener.ServletContextListener</listener-class>

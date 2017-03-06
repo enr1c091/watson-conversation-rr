@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Watson Conversation Enhanced Sample App</title>
+  <meta content="This is a sample app for Watson Conversation API" name="description">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .container {
+      width: 100%;
+    }
+     @media (min-width: 890px) {
+      .container {
+        width: 890px;
+      }
+    }
+    .sample-app {
+      width: 100%;
+      max-height: 667px;
+      min-height: 667px;
+      border: 1px solid #979797;
+    }
+  </style>
+</head>
+
+<body>
+<div class="container">
+  <h1 class="base--h1">Enhanced Conversation Sample Demo</h1>
+  <p class="base--p">This app represents a fictional cognitive car.  Commands issued to the car will be answered by the Conversation service.
+   For example, <b>"Turn on my wipers"</b> or <b>"Turn up the radio"</b>. It is also possible to ask detailed questions about how to operate a car
+   - details can be found in <a target=_blank href="http://www.fordservicecontent.com/Ford_Content/vdirsnet/OwnerManual/Home/Content?bookCode=O28450&languageCode=en&marketCode=US&viewTech=IE&chapterTitleSelected=G1508561&subTitleSelected=G1508566&topicHRef=G1467680&div=f&vFilteringEnabled=True"> this car manual</a>.  These will be answered by the Retrieve and Rank service.  For example, <b>"How do I check my tire pressure"</b>
+   or <b>"How do I turn on cruise control?"</b> The app's responses are shown on the left while the right shows the detailed JSON responses from
+   the server.</p>
+  <iframe class="sample-app" src="/dist/index.html" frameborder="0"></iframe>
+  <a href="http://www.ibm.com/watson/developercloud/doc/conversation/apps_overview.shtml" class="base--button">Back to documentation</a>
+  <a href="https://github.com/watson-developer-cloud/conversation-enhanced" class="base--button">View on Github</a>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+<script>
+
+  // dynamically calculate iframe height by ratio
+  function ratioify() {
+    var sampleWidth = document.querySelector('.sample-app').getBoundingClientRect().width;
+    var ratio = 0.6;
+    var height = sampleWidth * ratio;
+    $('.sample-app').css('height', height += 'px');
+  }
+
+  // calculate iframe ratio on window resize
+  $(window).resize(function() {
+    ratioify();
+  });
+
+  ratioify();
+</script>
+</body>
+
+</html>
