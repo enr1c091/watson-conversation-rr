@@ -21,7 +21,7 @@
     {
       "conditions": "@genre", 
       "context": null, 
-      "created": "2016-12-05T00:13:19.082Z", 
+      "created": "2016-12-05T00:13:19.082Z",  
       "description": null, 
       "dialog_node": "node_1_1467994522653", 
       "go_to": null, 
