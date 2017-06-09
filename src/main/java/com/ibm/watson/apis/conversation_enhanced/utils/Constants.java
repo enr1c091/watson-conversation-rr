@@ -28,7 +28,7 @@ public class Constants {
   
   // Retrieve and Rank Fields
   public static final String COLLECTION_NAME = "engov-collection";
-  public static final String CONFIGURATION_NAME = "car_config";
+  public static final String CONFIGURATION_NAME = "";
   public static final String CLUSTER_NAME = "Hyperm-cluster";
   public static final String RANKER_NAME = "ret-rank-hyperm";
   
