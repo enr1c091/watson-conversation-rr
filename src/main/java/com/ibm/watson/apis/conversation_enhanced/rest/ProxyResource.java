@@ -48,7 +48,7 @@ import com.ibm.watson.developer_cloud.util.GsonSingleton;
 @Path("conversation/api/v1/workspaces")
 public class ProxyResource {
   private static final Logger logger = LogManager.getLogger(ProxyResource.class.getName());
- 
+
   private static String API_VERSION;
   private static String PASSWORD;
   private static String URL;
